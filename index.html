@@ -11,7 +11,10 @@
 
 <body>
     <h2>Modal Login</h2>
-    <button onclick="document.getElementById('btn1').style.display='block'" style="width: auto;">Login</button>
+    <div class="container">
+        <button onclick="document.getElementById('btn1').style.display='block'" style="width: auto;">Login</button>
+    </div>
+
     <div id="btn1" class="modal">
         <form class="modal-content animate" action="" method="post">
             <div class="imgcontainer">
@@ -19,7 +22,7 @@
                     title="Close Modal">&times;</span>
                 <img src="img.png" alt="Avtar" class="avatar">
             </div>
-            <div class="container">
+            <div class="container-form">
                 <label for="username"> <b>Username</b> </label>
                 <input type="text" name="Username" id="username" placeholder="Enter Username">
                 <label for="password"> <b>Password</b> </label>
@@ -27,7 +30,7 @@
                 <button type="submit">Login</button>
                 <label for=""><input type="checkbox" name="remember" id="">Remember me</label>
             </div>
-            <div class="container" style="background-color: #f1f1f1;">
+            <div class="container-btn" style="background-color: #f1f1f1;">
                 <button type="button" onclick=" document.getElementById('btn1').style.display='none'" class="cancelbtn">Cancel</button>
                 <span class="password"> Forget <a href="#">Password?</a></span>
             </div>
